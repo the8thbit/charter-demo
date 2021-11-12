@@ -5,14 +5,8 @@ const MONTHS = {
 }
 
 const convertDollarsToPoints = (dollars) => (
-  Math.max(
-    0,
-    Math.floor(dollars) - 50,
-  ) +
-  Math.max(
-    (Math.floor(dollars) - 100) * 2,
-    0
-  )
+  Math.max(0, Math.floor(dollars) - 50) + // 1 point for all dollars spent over 50
+  Math.max(0, Math.floor(dollars) - 100) // 1 additional point for all dollars spent over 100
 );
 
 const calculatePointsFromPurchases = (purchases) => (
