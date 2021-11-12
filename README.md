@@ -1,3 +1,23 @@
+# Getting Started with this Demo
+
+This is a demo for my job application to Charter Communications. This repository can be used to generate a randomized dataset of customer data and purchases, display that data in a searchable table, and allow the export of that data to CSV file or printer.
+
+Running this code requires three steps:
+
+1. install dependencies with npm or yarn
+2. generate a random dataset using the generateData script. This script takes an integer argument describing the number of customers to generate data for.
+3. start the react-scripts server.
+
+It is important that you generate a dataset, otherwise you will not have any customer data to populate the table with.
+
+Example:
+
+    npm install
+    npm run generateData -- 300
+    npm start
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
